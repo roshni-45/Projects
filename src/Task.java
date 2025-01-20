@@ -6,11 +6,14 @@ import java.util.Scanner;
 class Task {
     private String description;
     private boolean isCompleted;
+
+    
     // Constructor
     public Task(String description) {
         this.description = description;
         this.isCompleted = false;
     }
+    
     // Getters and setters
     public String getDescription() {
         return description;
@@ -33,7 +36,7 @@ class Task {
         return (isCompleted ? "[Completed] " : "[Pending] ") + description;
     }}
 
-// ToDoList class manages all tasks in the to-do list
+// ToDoList class manages all tasks 
 class ToDoList {
     private List<Task> tasks;
 
@@ -87,7 +90,8 @@ class ToDoList {
         int choice;
 
         do {
-            // Display menu
+
+            
             System.out.println("\n--- To-Do List ---");
             System.out.println("1. Add a task");
             System.out.println("2. Remove a task");
@@ -96,7 +100,7 @@ class ToDoList {
             System.out.println("5. Exit");
             System.out.print("Enter your choice: ");
             choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine(); 
 
             switch (choice) {
                 case 1: // Add task
